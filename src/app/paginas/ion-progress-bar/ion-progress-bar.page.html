@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ion-progress-bar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="padding">
+  <ion-progress-bar [value]="progress"></ion-progress-bar>
+
+  <ion-progress-bar [buffer]="buffer" [value]="progress"></ion-progress-bar>
+  <br>
+  <br>
+  <ion-progress-bar type="indeterminate"></ion-progress-bar>
+</ion-content>

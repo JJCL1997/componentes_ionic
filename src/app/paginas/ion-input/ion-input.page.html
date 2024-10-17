@@ -1,0 +1,79 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ion-input</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-input label="Default input"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input label="Input with placeholder" placeholder="Enter company name"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input label="Input with value" value="121 S Pinckney St #300"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input label="Readonly input" value="Madison" [readonly]="true"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input label="Disabled input" value="53703" [disabled]="true"></ion-input>
+    </ion-item>
+  </ion-list>
+  <br>
+
+  <ion-input 
+    label="Default counter" 
+    labelPlacement="floating" 
+    fill="solid" 
+    [counter]="true" 
+    maxlength="20">
+  </ion-input>
+
+  <ion-input
+    id="custom-input"
+    label="Custom Counter Format"
+    labelPlacement="floating"
+    fill="outline"
+    [counter]="true"
+    maxlength="10"
+    [counterFormatter]="customCounterFormatter"
+  ></ion-input>
+  <br>
+
+  <ion-input
+    type="email"
+    fill="solid"
+    label="Email"
+    labelPlacement="floating"
+    helperText="Enter a valid email"
+    errorText="Invalid email"
+    ngModel
+    email
+  ></ion-input>
+  <br>
+
+  <ion-input
+    label="Solid input" 
+    label-placement="floating" 
+    fill="solid" 
+    placeholder="Enter text">
+  </ion-input>
+  <br />
+
+  <ion-input
+    label="Outline input" 
+    label-placement="floating" 
+    fill="outline" 
+    placeholder="Enter text">
+  </ion-input>
+</ion-content>

@@ -1,0 +1,67 @@
+// global.scss o en el archivo SCSS del componente específico
+
+// Variables de color
+$primary-color: #3880ff;
+$secondary-color: #32db64;
+$footer-bg-color: #f4f4f4;
+$header-bg-color: rgba(255, 255, 255, 0.9);
+
+// Estilo para el header
+ion-header {
+  background-color: $header-bg-color;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  ion-toolbar {
+    --background: transparent; // Hace que el toolbar sea transparente
+    ion-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: $primary-color;
+    }
+
+    ion-icon {
+      font-size: 24px;
+      margin-left: 10px;
+    }
+  }
+}
+
+// Estilo para el contenido
+ion-content {
+  background-color: #ffffff; // Fondo blanco para el contenido
+  padding: 10px;
+
+  ion-list {
+    margin: 10px 0;
+
+    ion-item {
+      border-radius: 5px;
+      background-color: $secondary-color; // Fondo del item
+      margin: 5px 0;
+      color: white;
+
+      ion-label {
+        font-size: 18px; // Tamaño de fuente del label
+      }
+
+      &:hover {
+        background-color: darken($secondary-color, 10%); // Efecto al pasar el ratón
+      }
+    }
+  }
+}
+
+// Estilo para el footer
+ion-footer {
+  background-color: $footer-bg-color;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+
+  ion-toolbar {
+    ion-title {
+      color: $primary-color;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-datetime</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-datetime locale="es-ES"></ion-datetime><br>
+  <ion-datetime presentation="month-year"></ion-datetime><br>
+  <ion-datetime presentation="time"></ion-datetime><br>
+  <ion-datetime presentation="date-time" [preferWheel]="true"></ion-datetime>
+</ion-content>

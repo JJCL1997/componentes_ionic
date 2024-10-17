@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ion-item-divider</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding" >
+  <ion-searchbar></ion-searchbar>
+  <ion-searchbar placeholder="Custom Placeholder"></ion-searchbar>
+  <ion-searchbar disabled="true" placeholder="Disabled"></ion-searchbar>
+  <ion-searchbar value="Value"></ion-searchbar>
+  <ion-searchbar animated="true" placeholder="Animated"></ion-searchbar>
+
+  <ion-searchbar></ion-searchbar>
+<ion-searchbar search-icon="search-circle" placeholder="Custom Search Icon"></ion-searchbar>
+
+<ion-searchbar show-clear-button="focus" value="Show on Focus"></ion-searchbar>
+<ion-searchbar show-clear-button="always" value="Always Show"></ion-searchbar>
+<ion-searchbar show-clear-button="never" value="Never Show"></ion-searchbar>
+<ion-searchbar show-clear-button="always" clear-icon="trash-bin" value="Custom Clear Icon"></ion-searchbar>
+
+<ion-searchbar show-cancel-button="focus" placeholder="Show on Focus"></ion-searchbar>
+<ion-searchbar show-cancel-button="always" placeholder="Always Show"></ion-searchbar>
+<ion-searchbar show-cancel-button="never" placeholder="Never Show"></ion-searchbar>
+<ion-searchbar
+  show-cancel-button="always"
+  cancel-button-text="Custom Cancel"
+  cancel-button-icon="trash"
+  placeholder="Custom Cancel Button"
+></ion-searchbar>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Toolbar</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+</ion-content>

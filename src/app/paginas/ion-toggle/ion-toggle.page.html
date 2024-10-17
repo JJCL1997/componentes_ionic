@@ -1,0 +1,18 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ion-toggle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-toggle>Default Toggle</ion-toggle><br /><br />
+  <ion-toggle [checked]="true">Checked Toggle</ion-toggle><br /><br />
+  <ion-toggle [disabled]="true">Disabled Toggle</ion-toggle><br /><br />
+  <ion-toggle [checked]="true" [disabled]="true">Disabled Checked Toggle</ion-toggle>
+
+  <ion-toggle [enableOnOffLabels]="true">Enable Notifications</ion-toggle>
+</ion-content>

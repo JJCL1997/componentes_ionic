@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-checkbox</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-checkbox>Basic</ion-checkbox>
+  <br>
+  <ion-checkbox [indeterminate]="true">Indeterminate checkbox</ion-checkbox>
+  <br>
+  <ion-checkbox>I agree to the <a href="#" (click)="$event.stopPropagation()">terms and conditions</a></ion-checkbox>
+  <br>
+  <ion-checkbox>Themed checkbox</ion-checkbox>
+</ion-content>

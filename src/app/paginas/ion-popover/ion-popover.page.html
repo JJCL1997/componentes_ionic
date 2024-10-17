@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ion-popover</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="padding">
+  <ion-button id="click-trigger">Left-Click Me</ion-button>
+  <ion-popover trigger="click-trigger" triggerAction="click">
+    <ng-template>
+      <ion-content class="ion-padding">Hello World!</ion-content>
+    </ng-template>
+  </ion-popover>
+  
+  <ion-button id="context-menu-trigger">Right-Click Me</ion-button>
+  <ion-popover trigger="context-menu-trigger" triggerAction="context-menu">
+    <ng-template>
+      <ion-content class="ion-padding">Hello World!</ion-content>
+    </ng-template>
+  </ion-popover>
+  
+  <ion-button id="hover-trigger">Hover Over Me</ion-button>
+  <ion-popover trigger="hover-trigger" triggerAction="hover">
+    <ng-template>
+      <ion-content class="ion-padding">Hello World!</ion-content>
+    </ng-template>
+  </ion-popover>
+
+
+  <ion-button (click)="presentPopover($event)">Click Me</ion-button>
+<ion-popover #popover [isOpen]="isOpen" (didDismiss)="isOpen = false">
+  <ng-template>
+    <ion-content class="ion-padding">Hello World!</ion-content>
+  </ng-template>
+</ion-popover>
+</ion-content>

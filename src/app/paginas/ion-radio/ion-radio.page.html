@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ion-radio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding" >
+  <ion-radio-group [allowEmptySelection]="true" value="turtles">
+    <ion-radio value="dogs">Dogs</ion-radio><br />
+    <ion-radio value="cats">Cats</ion-radio><br />
+    <ion-radio value="turtles">Turtles</ion-radio><br />
+    <ion-radio value="fish">Fish</ion-radio><br />
+  </ion-radio-group>
+
+
+  <ion-radio-group value="primary">
+    <ion-radio aria-label="Primary" color="primary" value="primary"></ion-radio>
+  </ion-radio-group>
+  <ion-radio-group value="secondary">
+    <ion-radio aria-label="Secondary" color="secondary" value="secondary"></ion-radio>
+  </ion-radio-group>
+  <ion-radio-group value="tertiary">
+    <ion-radio aria-label="Tertiary" color="tertiary" value="tertiary"></ion-radio>
+  </ion-radio-group>
+  <ion-radio-group value="success">
+    <ion-radio aria-label="Success" color="success" value="success"></ion-radio>
+  </ion-radio-group>
+  <ion-radio-group value="warning">
+    <ion-radio aria-label="Warning" color="warning" value="warning"></ion-radio>
+  </ion-radio-group>
+  <ion-radio-group value="danger">
+    <ion-radio aria-label="Danger" color="danger" value="danger"></ion-radio>
+  </ion-radio-group>
+  <ion-radio-group value="light">
+    <ion-radio aria-label="Light" color="light" value="light"></ion-radio>
+  </ion-radio-group>
+  <ion-radio-group value="medium">
+    <ion-radio aria-label="Medium" color="medium" value="medium"></ion-radio>
+  </ion-radio-group>
+  <ion-radio-group value="dark">
+    <ion-radio aria-label="Dark" color="dark" value="dark"></ion-radio>
+  </ion-radio-group>
+
+
+  <ion-radio-group value="custom-checked">
+    <ion-radio value="custom" aria-label="Custom checkbox"></ion-radio>
+    <ion-radio value="custom-checked" aria-label="Custom checkbox that is checked"></ion-radio>
+  </ion-radio-group>
+</ion-content>

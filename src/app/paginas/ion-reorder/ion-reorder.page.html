@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ion-reorder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-list>
+    <!-- The reorder gesture is disabled by default, enable it to drag and drop items -->
+    <!-- Casting $event to $any is a temporary fix for this bug https://github.com/ionic-team/ionic-framework/issues/24245 -->
+    <ion-reorder-group [disabled]="false" (ionItemReorder)="handleReorder($any($event))">
+      <ion-item>
+        <ion-label> Pepino </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label> Fresa </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label> Manzana </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label> Uva </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label> Banano mmm </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+</ion-content>

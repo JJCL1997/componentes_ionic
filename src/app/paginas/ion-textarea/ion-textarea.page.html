@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ion-textarea</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-list>
+    <ion-item>
+      <ion-textarea label="User Name" placeholder="Enter your name"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-textarea type="email" label="Email" placeholder="Enter your email"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-textarea label="Comments" placeholder="Share your feedback here"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-textarea label="Suggestions" placeholder="Any suggestions?"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-textarea [readonly]="true" label="Readonly notes" value="This field is for admin use only."></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-textarea [disabled]="true" label="Disabled field" placeholder="Field is disabled"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-textarea label="Notes" labelPlacement="floating" placeholder="Additional notes"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-textarea label="Description" labelPlacement="stacked" placeholder="Provide a detailed description"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-textarea label="Summary" labelPlacement="fixed" placeholder="Enter a brief summary"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-textarea labelPlacement="floating" placeholder="Enter your comments">
+        <div slot="label">Comments <ion-text color="danger">(Required)</ion-text></div>
+      </ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-textarea label="Solid textarea" labelPlacement="floating" fill="solid" placeholder="Enter text"></ion-textarea>
+
+<br />
+
+<ion-textarea label="Outline textarea" labelPlacement="floating" fill="outline" placeholder="Enter text"></ion-textarea>
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>alert</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button id="present-alert" expand="block" color="warning">Alerta</ion-button>
+  <ion-alert
+  trigger="present-alert"
+  header="Haz conocido el componente Alerta"
+  message="Tu conocimiento ha aumentado"
+  [buttons]="alertButtons"
+></ion-alert>
+</ion-content>

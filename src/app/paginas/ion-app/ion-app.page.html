@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-app</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button id="buttonToFocus" fill="outline">Button</ion-button>
+
+  <ion-radio-group value="a">
+    <ion-radio id="radioToFocus" value="a">Radio</ion-radio>
+  </ion-radio-group>
+  
+  <br />
+  
+  <ion-button (click)="focusElement('#buttonToFocus')">Focus Button</ion-button>
+  <ion-button (click)="focusElement('#radioToFocus')">Focus Radio</ion-button>
+</ion-content>

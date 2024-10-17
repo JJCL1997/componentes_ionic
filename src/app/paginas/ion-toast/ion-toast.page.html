@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ion-toast</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Inline Toast</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-button id="open-toast" expand="block">Open</ion-button>
+    <p id="message">This toast example uses triggers to automatically open a toast when the button is clicked.</p>
+    <ion-toast trigger="open-toast" message="This toast will disappear after 5 seconds" [duration]="5000"></ion-toast>
+  </ion-content>
+
+  <ion-button expand="block" (click)="presentToast('top')">Present Toast At the Top</ion-button>
+<ion-button expand="block" (click)="presentToast('middle')">Present Toast At the Middle</ion-button>
+<ion-button expand="block" (click)="presentToast('bottom')">Present Toast At the Bottom</ion-button>
+</ion-content>
